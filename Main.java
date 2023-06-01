@@ -25,6 +25,12 @@ public class Main {
         ).collect(Collectors.toList()); //Stream 타입을 List로 형태 변환 해줌
         System.out.println(collect);
 
+        List<Integer> collect1 = list
+                .stream()
+                .filter(el -> el % 2 == 0)
+                .map(el-> el*2)
+                .collect(Collectors.toList());
+        System.out.println(collect1);
     }
 
 }
