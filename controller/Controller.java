@@ -28,6 +28,7 @@ public class Controller {
         }
 
         if (mod == 1) {
+
 //            TODO : insert 기능 만들것
             service.insert(sc.nextInt());
         }else if(mod ==2) {
